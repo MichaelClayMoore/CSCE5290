@@ -49,7 +49,7 @@ for pair in all_words_filter:
 freq = nltk.FreqDist(all_words)
 
 # plot the most frequent words
-# freq.plot(10, cumulative=False)
+freq.plot(10, cumulative=False)
 
 # import plt to do a bar chart
 import matplotlib.pyplot as plt
@@ -62,5 +62,5 @@ words = [w[0] for w in all_words_filter]
 val = [w[1] for w in all_words_filter]
 
 # plot graph
-plt.bar(words[:10], val[:10])
-plt.show()
+# plt.bar(words[:10], val[:10])
+# plt.show()
